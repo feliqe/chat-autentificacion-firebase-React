@@ -1,0 +1,49 @@
+------------------------- configuración FireBase ----------------------------------
+
+ - ingresamos a FireBase https://console.firebase.google.com
+    - los iniciamos con la cuenta de google
+        - creamos un proyecto nuevo colocamos el nombre
+        - deshabilitamos el marcador
+        - ingresamos el nombre del proyecto como se llamara en firebase, no marcamos la casilla
+        - crear en la raíz de src firebase.js
+        - copiamos la hoja de comandos que se muestra la pagina
+        - finalmente le damos a ir a consola en al pagina
+    - seleccionamos autentificacion y el damos a comenzar
+        - seleccionamos la cuenta que se realizar la autentificaron en este caso de google
+        - marcamos la casilla y seleccionamos el correo electrónico de la cuenta de firebase y guardamos
+        - en la parte de usuario es donde se irán guardando los usuario autentificados
+    - seleccionamos firestore database seleccionamos crear
+        - dejamos la ubicacion por defecto le damos a siguiente
+        - indicamos que es en modo prueba y seleccionamos crear
+- configuración de cloud firestone
+    - seleccionamos iniciar colección
+    - le damos un nombre seleccionamos siguiente
+    - le damos un id automático
+    - creamos los campos que usaremos, para este caso usaremos se crean los campos dos veces
+        - text - string - message
+        - timestamp - timestamp - seleccionamos la fecha de hoy y la hora
+        - se guarda, mostraran los campos como una tabla que se a creado
+    - para finalizar la configuración dentro del proyecto se ejecuta los siguientes comandos
+        - npm install firebase
+        - npm install react-firebase-hooks
+    - para validar la instalación se revisan en la hoja de package.json
+
+------------------------------ conceptos archivos --------------------------------------
+
+- Chat.tsx - es donde los usuario del mensaje
+- Message.tsx - es donde se mostrara los mensajes
+- User.tsx - validara si están logeado
+- SignIn.tsx - el link donde se enviara a logearse con la cuenta de google
+- guardamos una imagen de usuario en la carpeta public
+- SendMessage.tsx - donde se escribirá los mensajes para enviar
+- instalar el package de emoji se tiene que ejecutar el siguiente comando
+    - npm i emoji-picker-react
+
+------------------------------ crear archivos --------------------------------------
+
+- creamos la carpeta components
+- dentro de components creamos la hoja Chat.tsx
+- dentro de components creamos la hoja Message.tsx
+- dentro de components creamos la hoja SignIn.tsx
+- dentro de components creamos la hoja User.tsx
+- dentro de components creamos la hoja SendMessage.tsx
